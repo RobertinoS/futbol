@@ -5,8 +5,8 @@ from typing import Optional
 
 app = FastAPI()
 
-df_play=pd.read_parquet('data/df_playtime_parquet.parquet')
-df_usegenre=pd.read_parquet('data/df_userforgenre_parquet.parquet')
+df_play=pd.read_parquet('data/df_playtime_parquet')
+df_usegenre=pd.read_parquet('data/df_userforgenre_parquet')
 
 #http://127.0.0.1:8000 (ruta raiz)
 @app.get("/")                       #ruta
